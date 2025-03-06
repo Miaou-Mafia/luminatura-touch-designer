@@ -11,6 +11,38 @@ Lorsque l’utilisateur pose sa main sur la plaque, le visuel s’intensifie, re
 | 10002 | TouchDesigner - projection sur le sol |
 | 10004 | TouchDesigner - projection sur le mur |
 
+Effets visuels pour toutes les plaques
+* Projection du mur
+    * Deux des 6 particles GPU passent de 10 particules à 500 quand une des plaques est touchée.
+    * Le gamma devient de plus en plus fort quand les surfaces des mains augmentent
+    * Toutes les particles GPU passent au mauve quand la plaque 1 et la plaque 2 sont activées
+    * Toutes les particles GPU passent au vert quand la plaque 2 et la plaque 3 sont activées
+    * Toutes les particles GPU passent au rouge quand la plaque 1 et la plaque 3 sont activées
+    * Toutes les particles GPU changent de couleur (mauve, vert, rouge, rose, bleu, jaune) en interval quand toutes les plaques sont activées
+    * Quand toutes les plaques sont activées, le vent du particles GPU se mets en mouvement grâce à des LFOs
+
+Effets visuels pour la plaque 1
+* Projection du sol
+    * Le particles GPU passe d'une force qui se focus au centre à une force qui se focus vers la plaque 1 (centre)
+      
+* Projection du mur
+    * Toutes les particles GPU passent au rose quand la plaque 1 est activée
+
+Effets visuels pour la plaque 2
+* Projection du sol
+    * Le particles GPU passe d'une force qui se focus au centre à une force qui se focus vers la plaque 2 (gauche)
+      
+* Projection du mur
+    * Toutes les particles GPU passent au bleu quand la plaque 2 est activée
+
+Effets visuels pour la plaque 3
+* Projection du sol
+    * Le particles GPU passe d'une force qui se focus au centre à une force qui se focus vers la plaque 3 (droite)
+
+* Projection du mur
+    * Toutes les particles GPU passent au jaune quand la plaque 3 est activée
+
+
 ## Projection mur
 
 ```mermaid
